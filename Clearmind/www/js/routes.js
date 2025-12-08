@@ -37,8 +37,8 @@ var app = new Framework7({
 	  }
     },
     {
-      path: '/link2/',
-      url: 'link2.html',
+      path: '/sessoes/',
+      url: 'sessoes.html',
       animate: false,
 	  on: {
 		pageBeforeIn: function (event, page) {
@@ -56,8 +56,8 @@ var app = new Framework7({
 	  }
     },
     {
-      path: '/link3/',
-      url: 'link3.html',
+      path: '/mensagens/',
+      url: 'mensagens.html',
       animate: false,
 	  on: {
 		pageBeforeIn: function (event, page) {
