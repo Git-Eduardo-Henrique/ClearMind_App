@@ -18,8 +18,8 @@ var app = new Framework7({
   // Add default routes
   routes: [
     {
-      path: '/index/',
-      url: 'index.html',
+      path: '/home/',
+      url: 'home.html',
       animate: false,
 	  on: {
 		pageBeforeIn: function (event, page) {
@@ -58,6 +58,25 @@ var app = new Framework7({
     {
       path: '/mensagens/',
       url: 'mensagens.html',
+      animate: false,
+	  on: {
+		pageBeforeIn: function (event, page) {
+		// fazer algo antes da página ser exibida
+		},
+		pageAfterIn: function (event, page) {
+		// fazer algo depois da página ser exibida
+		},
+		pageInit: function (event, page) {
+		// fazer algo quando a página for inicializada
+		},
+		pageBeforeRemove: function (event, page) {
+		// fazer algo antes da página ser removida do DOM
+		},
+	  }
+    },
+    {
+      path: '/inicio/',
+      url: 'inicio.html',
       animate: false,
 	  on: {
 		pageBeforeIn: function (event, page) {

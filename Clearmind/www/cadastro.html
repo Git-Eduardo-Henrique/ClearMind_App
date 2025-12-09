@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- Color theme for statusbar (Android only) -->
+    <meta name="theme-color" content="#2196f3">
+    <!-- Your app title -->
+    <title>Clearmind Home</title>
+    <!-- Path to Framework7 Library Bundle CSS -->
+    <link rel="stylesheet" href="lib/framework7-bundle.min.css">
+    <!-- CSS PERSONALIZADO PARA MENU-->
+    <link rel="stylesheet" href="css/personalizado.css">
+    <!--Ícones Material Design-->
+    <link rel="stylesheet" href="css/materialdesignicons.min.css">
+
+    <link rel="stylesheet" href="css/cadastro.css">
+
+</head>
+
+<body>
+    <!-- App root element -->
+    <div id="app">
+
+        <!-- Your main view, should have "view-main" class -->
+        <div class="view view-main">
+            <!-- Initial Page, "data-name" contains page name -->
+            <div data-name="login" class="page color-theme-blue">
+                <div class="page-content login-page">
+
+                    <!-- LOGO -->
+                    <div class="block text-align-center margin-top-xl">
+                        <img src="img/logo_completo.png" class="logo-login">
+                    </div>
+
+                    <!-- FORMULÁRIO -->
+                    <div class="block login-form">
+
+                        <!-- EMAIL -->
+                        <div class="list no-hairlines-between">
+                            <ul>
+                                <li class="item-content item-input">
+                                    <div class="item-inner">
+                                        <div class="item-title item-label">email:</div>
+                                        <div class="item-input-wrap">
+                                            <input type="email" placeholder="Digite seu email" />
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <!-- SENHA -->
+                                <li class="item-content item-input">
+                                    <div class="item-inner">
+                                        <div class="item-title item-label">senha:</div>
+                                        <div class="item-input-wrap">
+                                            <input type="password" placeholder="Digite sua senha" />
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- BOTÃO CADASTRAR-SE -->
+                        <div class="text-align-center margin-top">
+                            <a class="register-link">cadastre-se</a>
+                        </div>
+
+                        <!-- DIVISOR -->
+                        <div class="divider">
+                            <span>ou</span>
+                        </div>
+
+                        <!-- GOOGLE LOGIN -->
+                        <a class="button button-fill google-btn">
+                            <img src="img/icon_google.png" class="google-icon">
+                            <span>cadastrar-se com Google</span>
+                        </a>
+
+                    </div>
+
+                    <!-- FUNDO DE ONDAS -->
+                    <div class="ocean-wrapper">
+                        <div class="wave wave1"></div>
+                        <div class="wave wave2"></div>
+                        <div class="wave wave3"></div>
+                    </div>
+
+                    <!-- RODAPÉ -->
+                    <div class="footer-login text-align-center">
+                        Já possui cadastro? <a class="login-link">Entrar</a>
+                    </div>
+
+                    <!-- NUVENS ANIMADAS -->
+                    <img src="img/cloud1.png" class="cloud cloud1">
+                    <img src="img/cloud2.png" class="cloud cloud2">
+                    <img src="img/cloud3.png" class="cloud cloud3">
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Path to Framework7 Library Bundle JS-->
+    <script type="text/javascript" src="lib/framework7-bundle.min.js"></script>
+	<!-- jQuery -->
+	<script type="text/javascript" src="lib/jquery-3.7.0.min.js"></script>	
+    <!-- Roteamento do app-->
+    <script type="text/javascript" src="js/routes.js"></script>
+    <script src="cordova.js"></script>
+</body>
+
+</html>
+
