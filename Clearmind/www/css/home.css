@@ -1,0 +1,100 @@
+/* ===== BACKGROUND ===== */
+.home-f7 {
+    background: #f7f1eb;
+}
+
+/* ===== HEADER ===== */
+.logo-f7 {
+    width: 130px;
+}
+
+.profile-icon {
+    font-size: 34px;
+    color: #163b5c;
+}
+
+/* ===== CARD PSICÓLOGA ===== */
+.therapist-card-f7 {
+    border-radius: 14px;
+}
+
+.therapist-photo-f7 {
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.therapist-name-f7 {
+    font-size: 18px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.verified-icon {
+    color: #4CAF50;
+    font-size: 18px;
+}
+
+.therapist-role-f7 {
+    font-size: 14px;
+    color: #555;
+}
+
+.therapist-nav-icon {
+    margin-left: auto;
+    font-size: 22px;
+    color: #666;
+}
+
+/* ===== SESSÕES ===== */
+.session-btn-f7 {
+    min-width: 110px;
+    text-align: center;
+}
+
+.session-date-f7 {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.session-time-f7 {
+    font-size: 14px;
+    color: #666;
+}
+
+/* ===== PACOTES ===== */
+.package-card-f7 {
+    border-radius: 14px;
+}
+
+.package-title-f7 {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.package-desc-f7 {
+    font-size: 14px;
+    color: #555;
+}
+
+.package-badge-f7 {
+    width: 38px;
+    height: 38px;
+    border-radius: 12px;
+    background: #dbe6ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #2a4fa3;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+/* ===== BOTÃO LIGHT BLUE ===== */
+.color-lightblue {
+    background: #cfe0ff;
+    color: #1a3a70;
+}

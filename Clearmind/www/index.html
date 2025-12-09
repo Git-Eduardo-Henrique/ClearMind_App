@@ -10,7 +10,7 @@
     <!-- Color theme for statusbar (Android only) -->
     <meta name="theme-color" content="#2196f3">
     <!-- Your app title -->
-    <title>Template Tab</title>
+    <title>Clearmind Home</title>
     <!-- Path to Framework7 Library Bundle CSS -->
     <link rel="stylesheet" href="lib/framework7-bundle.min.css">
     <!-- CSS PERSONALIZADO PARA MENU-->
@@ -18,6 +18,7 @@
     <!--Ícones Material Design-->
     <link rel="stylesheet" href="css/materialdesignicons.min.css">
 
+    <link rel="stylesheet" href="css/home.css">
 
 </head>
 
@@ -46,20 +47,93 @@
 
             <!-- Initial Page, "data-name" contains page name -->
             <div data-name="index" class="page color-theme-blue">
-
-                <!-- Top Navbar -->
-                <div class="navbar">
-                    <div class="navbar-bg"></div>
-                    <div class="navbar-inner justify-content-center">
-                        <div class="title ">Logo_Clearmind</div>
-                    </div>
-                </div>
-
                 <!-- Scrollable page content -->
-                <div class="page-content">
-                    <div class="block">
-                        Conteúdo da home page
+                <div class="page-content home-f7">
+
+                    <!-- HEADER (Logo + Perfil) -->
+                    <div class="block header-f7 display-flex justify-content-between align-items-center">
+                        <!-- Logo (trocar imagem depois) -->
+                        <img src="img/logo_completo.png" class="logo-f7" alt="Logo">
+
+                        <!-- Ícone de perfil -->
+                        <i class="mdi mdi-bell"></i>
+                        <i class="mdi mdi-account-circle profile-icon"></i>
                     </div>
+
+                    <!-- CARD DA PSICÓLOGA -->
+                    <div class="card card-outline therapist-card-f7">
+                        <div class="card-content card-content-padding">
+
+                            <div class="display-flex align-items-center">
+                                <!-- Foto -->
+                                <img src="img/serena.png" class="therapist-photo-f7">
+
+                                <div class="margin-left">
+                                    <div class="therapist-name-f7">
+                                        Dra. Serena Dias 
+                                        <i class="mdi mdi-check-decagram verified-icon"></i>
+                                    </div>
+                                    <div class="therapist-role-f7">Psicóloga profissional</div>
+                                </div>
+
+                                <i class="mdi mdi-chevron-right therapist-nav-icon"></i>
+                            </div>
+
+                            <!-- BOTÕES -->
+                            <div class="display-flex justify-content-space-between margin-top">
+                                <a class="button button-fill color-blue width-50">
+                                    <i class="mdi mdi-calendar-plus"></i>
+                                    <span>Reservar horário</span>
+                                </a>
+
+                                <a class="button button-outline color-blue width-50">
+                                    <i class="mdi mdi-message-text"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- PRÓXIMAS SESSÕES -->
+                    <div class="block-title">Suas Próximas Sessões:</div>
+
+                    <div class="card card-outline next-session-card-f7">
+                        <div class="card-content card-content-padding display-flex align-items-center">
+
+                            <!-- Botão entrar -->
+                            <a class="button button-fill color-blue session-btn-f7 margin-right">
+                                <i class="mdi mdi-login"></i> Ingressar
+                            </a>
+
+                            <!-- Informações -->
+                            <div>
+                                <div class="session-date-f7">Hoje</div>
+                                <div class="session-time-f7">23 de Outubro de 2026 | 13:30 - 13:45</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- PACOTES -->
+                    <div class="block-title">Pacotes</div>
+
+                    <div class="card card-outline package-card-f7">
+                        <div class="card-content card-content-padding display-flex justify-content-between align-items-center">
+
+                            <div>
+                                <div class="package-title-f7">Sessões de Terapia Restantes</div>
+                                <div class="package-desc-f7">Veja seus pacotes disponíveis</div>
+                            </div>
+
+                            <div class="package-badge-f7">1</div>
+                        </div>
+
+                        <div class="card-footer">
+                            <a class="button button-fill color-lightblue width-100">
+                                Checar Planos de Pacotes
+                            </a>
+                        </div>
+                    </div>
+
+                    <div style="height: 80px;"></div>
                 </div>
             </div>
         </div>
