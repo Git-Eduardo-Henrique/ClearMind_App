@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- Color theme for statusbar (Android only) -->
+    <meta name="theme-color" content="#2196f3">
+    <!-- Your app title -->
+    <title>Clearmind Home</title>
+    <!-- Path to Framework7 Library Bundle CSS -->
+    <link rel="stylesheet" href="lib/framework7-bundle.min.css">
+    <!-- CSS PERSONALIZADO PARA MENU-->
+    <link rel="stylesheet" href="css/personalizado.css">
+    <!--Ícones Material Design-->
+    <link rel="stylesheet" href="css/materialdesignicons.min.css">
+
+    <link rel="stylesheet" href="css/veri_psico.css">
+
+</head>
+
+<body>
+    <!-- App root element -->
+    <div id="app">
+
+        <!-- Your main view, should have "view-main" class -->
+        <div class="view view-main">
+            <!-- Initial Page, "data-name" contains page name -->
+            <div data-name="start" class="page color-theme-blue">
+                <div class="page-content bg-dark-blue display-flex flex-direction-column align-items-center justify-content-center">
+    
+                <div class="illustration-header margin-top">
+                    <img src="https://via.placeholder.com/300x200" class="img-fluid" alt="Agendamento">
+                </div>
+
+                <div class="block text-align-center no-margin-bottom">
+                    <h2 class="text-color-white font-weight-bold">Agende sua reunião inicial gratuita!</h2>
+                    <p class="text-color-white opacity-80">Você pode conhecer seu psicólogo marcando uma videochamada grátis de 15 min.</p>
+                </div>
+
+                <div class="card card-profile margin-horizontal">
+                    <div class="card-content card-content-padding text-align-center">
+                        <div class="avatar-wrapper margin-bottom">
+                            <img src="img/serena.png" class="profile-img" alt="Dra. Serena">
+                        </div>
+                        <div class="profile-info">
+                            <div class="display-flex justify-content-center align-items-center">
+                                <span class="profile-name">Dra. Serena Dias</span>
+                                <i class="icon f7-icons color-green size-18 margin-left-half">checkmark_seal_fill</i>
+                            </div>
+                            <p class="profile-role">Psicóloga profissional</p>
+                            <a href="#" class="link text-color-blue font-weight-bold margin-top-half">VER PERFIL ></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="block actions-wrapper full-width margin-top">
+                    <button class="button button-large button-fill button-raised bg-light-blue color-white font-weight-bold">
+                        AGENDAR CHAMADA INICIAL
+                    </button>
+                    
+                    <div class="text-align-center margin-top">
+                        <a href="#" class="link text-color-white underline">SAIR PARA A TELA INICIAL</a>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <!-- Path to Framework7 Library Bundle JS-->
+    <script type="text/javascript" src="lib/framework7-bundle.min.js"></script>
+	<!-- jQuery -->
+	<script type="text/javascript" src="lib/jquery-3.7.0.min.js"></script>	
+    <!-- Roteamento do app-->
+    <script type="text/javascript" src="js/routes.js"></script>
+    <script src="cordova.js"></script>
+</body>
+
+</html>
