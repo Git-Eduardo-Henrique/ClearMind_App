@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- Color theme for statusbar (Android only) -->
+    <meta name="theme-color" content="#2196f3">
+    <!-- Your app title -->
+    <title>Clearmind Home</title>
+    <!-- Path to Framework7 Library Bundle CSS -->
+    <link rel="stylesheet" href="lib/framework7-bundle.min.css">
+    <!-- CSS PERSONALIZADO PARA MENU-->
+    <link rel="stylesheet" href="css/personalizado.css">
+    <!--Ícones Material Design-->
+    <link rel="stylesheet" href="css/materialdesignicons.min.css">
+
+    <link rel="stylesheet" href="css/perguntas.css">
+
+</head>
+
+<body>
+    <!-- App root element -->
+    <div id="app">
+
+        <!-- Your main view, should have "view-main" class -->
+        <div class="view view-main">
+            <!-- Initial Page, "data-name" contains page name -->
+            <div data-name="perguntas" class="page color-theme-blue">
+                 <!-- NUVENS (cada uma com delay diferente) -->
+                <div class="cloud cloud-1">
+                <img src="img/cloud1.png" />
+                </div>
+
+                <div class="cloud cloud-2">
+                <img src="img/cloud2.png" />
+                </div>
+
+                <div class="cloud cloud-3">
+                <img src="img/cloud3.png" />
+                </div>
+
+                <!-- Título -->
+                <f7-block class="text-align-center">
+                <h2 class="pergunta-titulo">EXEMPLO PERGUNTA 1:</h2>
+                </f7-block>
+
+                <!-- Opções -->
+                <f7-list inset class="pergunta-opcoes">
+                <f7-list-item>
+                    <button class="button botao-opcao">OPÇÃO 1</button>
+                </f7-list-item>
+
+                <f7-list-item>
+                    <button class="button botao-opcao">OPÇÃO 2</button>
+                </f7-list-item>
+
+                <f7-list-item>
+                    <button class="button botao-opcao">OPÇÃO 3</button>
+                </f7-list-item>
+                </f7-list>
+
+                <!-- ONDA ANIMADA NO FUNDO -->
+                <div class="wave wave-1"></div>
+                <div class="wave wave-2"></div>
+                <div class="wave wave-3"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Path to Framework7 Library Bundle JS-->
+    <script type="text/javascript" src="lib/framework7-bundle.min.js"></script>
+	<!-- jQuery -->
+	<script type="text/javascript" src="lib/jquery-3.7.0.min.js"></script>	
+    <!-- Roteamento do app-->
+    <script type="text/javascript" src="js/routes.js"></script>
+    <script src="cordova.js"></script>
+</body>
+
+</html>

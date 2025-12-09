@@ -18,7 +18,7 @@
     <!--Ícones Material Design-->
     <link rel="stylesheet" href="css/materialdesignicons.min.css">
 
-
+    <link rel="stylesheet" href="css/sessoes.css">
 </head>
 
 <body>
@@ -29,20 +29,55 @@
         <div class="view view-main">
             <!-- Initial Page, "data-name" contains page name -->
             <div data-name="sessoes" class="page">
-
-                <!-- Top Navbar -->
-                <!-- <div class="navbar">
-                    <div class="navbar-bg"></div>
-                    <div class="navbar-inner justify-content-center">
-                        <div class="title ">Link 2</div>
-                    </div>
-                </div> -->
-
                 <!-- Scrollable page content -->
                 <div class="page-content">
-                    <div class="block">
-                        Conteúdo do link 2
+                    <!-- Fundo ilustrado (placeholder, substitua a imagem depois) -->
+                    <div class="background-pattern"></div>
+
+                    <!-- Título -->
+                    <div class="block page-title">
+                        <h2>SESSÕES</h2>
                     </div>
+
+                    <!-- Tabs: Agendados / Sessões passadas -->
+                    <div class="segmented segmented-raised tabs-menu">
+                        <a href="#" class="button button-active">Agendados</a>
+                        <a href="#" class="button">Sessões passadas</a>
+                    </div>
+
+                    <!-- CARTÃO DE SESSÃO -->
+                    <div class="card session-card">
+                        <div class="card-content card-content-padding">
+
+                            <!-- Avatar + Nome -->
+                            <div class="session-header">
+                                <img class="session-avatar" src="img/serena.png">
+                                <div class="session-info">
+                                    <div class="session-name">Dra. Serena Dias</div>
+                                    <div class="session-date small-text">Hoje</div>
+                                </div>
+                            </div>
+
+                            <!-- Botão ingressar -->
+                            <div class="session-action">
+                                <a class="button button-fill color-blue button-small">
+                                    <i class="mdi mdi-phone"></i> INGRESSAR
+                                </a>
+                            </div>
+
+                            <!-- Horário -->
+                            <div class="session-time small-text">
+                                23 de Outubro de 2026 | 13:30 - 13:45
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Botões principais -->
+                    <div class="block main-buttons">
+                        <a class="button button-fill color-blue chama-teste">Chama de teste</a>
+                        <a class="button button-outline color-blue agendar-btn">Agendar Sessão</a>
+                    </div>
+
                 </div>
             </div>
         </div>
