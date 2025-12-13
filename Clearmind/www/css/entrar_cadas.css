@@ -1,0 +1,154 @@
+@import url(main.css);
+
+/* ===== GERAL ===== */
+
+.intro-page {
+    background: var(--white);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center
+}
+
+.formulario {
+    z-index: 5;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-login {
+    z-index: 5;
+}
+
+/* ===== TEXTOS ===== */
+
+.intro-title {
+    font-size: 28px;
+    color: #3a5f7d;
+    margin-top: 10px;
+}
+
+.intro-desc {
+    color: var(--black);
+    font-size: 15px;
+    padding: 0 20px;
+}
+
+/* ===== BOTÃO ===== */
+
+.start-button {
+    width: 90%;
+    font-size: 36px;
+    color: var(--dark_blue);
+    z-index: 5;
+}
+
+.text_button {
+    background-color: var(--white);
+    color: var(--dark_blue);
+
+    height: 55px;
+    border-radius: 5px;
+    border: 1px solid var(--dark_blue);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1.5rem;
+
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.benefit-icon {
+    height: 26px;
+}
+
+/**/
+
+.footer-login {
+    color: var(--white);
+}
+
+.entrar_cadas_link {
+    color: var(--blue);
+    font-weight: bold;
+    font-size: 1.1em;
+    text-decoration: underline;
+}
+
+/**/
+
+.div_entrar_ou {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+
+    width: 100%;
+}
+
+.entrar {
+    text-decoration: underline;
+    color: var(--dark_blue);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.custom_hr {
+    height: 0.1rem; 
+    width: 85%;
+    background: var(--dark_blue);  
+    border: none;    
+}
+
+.span_ou {
+    color: var(--black);
+}
+
+/**/
+
+.custom_icon {
+    font-size: 22px;
+    color: var(--dark_blue);
+}
+
+.div_inputs {
+    width: 90%;
+}
+
+.item-input-outline {
+    background-color: var(--white); /* ou rgba(255,255,255,0.9) */
+}
+
+.div_inputs {
+    --f7-input-outline-border-color: var(--dark_blue);
+    --f7-input-outline-border-width: 2px;
+    --f7-input-outline-border-radius: 5px;
+}
+
+.div_inputs .item-input-outline .item-input-wrap input::placeholder {
+    color: var(--dark_blue);
+    opacity: 1;
+}
+
+.div_inputs .item-input-outline .item-input-wrap input::-webkit-input-placeholder {
+    color: var(--dark_blue);
+}
+
+.div_inputs .item-input-outline .item-input-wrap input:-ms-input-placeholder {
+    color: var(--dark_blue);
+}
+
+.nuvem_1 {
+    top: 15px;
+}
+
+.nuvem_2 {
+    top: 280px;
+}

@@ -33,8 +33,13 @@
 
 .inter_font {
     font-family: "Inter", sans-serif;
-    font-optical-sizing: auto;
     font-weight: bold;
+    font-style: normal;
+}
+
+.nunito_font {
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 500;
     font-style: normal;
 }
 
