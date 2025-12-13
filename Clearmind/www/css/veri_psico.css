@@ -1,6 +1,70 @@
-/* Fundo azul escuro da tela */
-.bg-dark-blue {
-    background-color: #3D5A73 !important; /* Ajuste para o tom exato do seu design */
+@import url(main.css);
+
+.page-content {
+    background: var(--white);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.custom_button {
+    width: 80%;
+    font-size: 36px;
+    color: var(--dark_blue);
+}
+
+.text_button {
+    background-color: var(--blue);
+    color: var(--white);
+
+    height: 55px;
+    border-radius: 5px;
+    border: 1px solid var(--white);
+
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.div_avancar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+}
+
+.custom_icon {
+    color: var(--blue);
+}
+
+.custom_h2 {
+    color: var(--blue);
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.custom_p {
+    color: var(--white);
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.custom_flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 0.8rem;
+
+    z-index: 5;
+
+    margin-top: 5rem;
+}
+
+.custom_texts_box{
+    width: 90%;
 }
 
 /* Ilustração superior */
@@ -13,10 +77,9 @@
 
 /* Card central com fundo bege claro */
 .card-profile {
-    background-color: #FFF9F1 !important;
-    border-radius: 25px !important;
-    width: 85%;
-    max-width: 320px;
+    background-color: var(--white);
+    border-radius: 30px;
+    width: 70%;
     box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
 }
 
@@ -26,44 +89,63 @@
     height: 100px;
     border-radius: 50%;
     object-fit: cover;
-    border: 2px solid #fff;
 }
 
 /* Textos do Perfil */
 .profile-name {
     font-size: 1.2rem;
     font-weight: bold;
-    color: #333;
+    color: var(--black);
 }
 
 .profile-role {
-    color: #666;
+    color: var(--gray);
     margin: 4px 0;
-}
-
-/* Botão Azul Claro */
-.bg-light-blue {
-    background-color: #B4CFFF !important;
-    color: #fff !important;
-    border-radius: 12px !important;
-    height: 60px !important;
-    line-height: 60px !important;
-    font-size: 1rem;
-}
-
-/* Utilitários */
-.opacity-80 {
-    opacity: 0.8;
 }
 
 .full-width {
     width: 100%;
 }
 
-.underline {
-    text-decoration: underline !important;
+.custom_link {
+    font-weight: bold;
+    font-size: 0.9rem;
+
+    color: var(--white);
+    text-decoration: underline;
 }
 
-.size-18 {
-    font-size: 18px !important;
+.custom_perfil_link {
+    color: var(--dark_blue);
+    text-decoration: underline;
+
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+.ondas {
+    bottom: 67%;
+}
+
+.caixa_p_ondas {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+    height: 80%;
+
+    background-color: var(--dark_blue);
+}
+
+.decoracao {
+    position: absolute;
+    top: 0px;
+    left: 40%;
+
+    z-index: 5;
+}
+
+.decoracao_img {
+    width: 150px;
 }

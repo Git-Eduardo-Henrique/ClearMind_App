@@ -18,6 +18,7 @@
     <!--Ícones Material Design-->
     <link rel="stylesheet" href="css/materialdesignicons.min.css">
 
+    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/veri_psico.css">
 
 </head>
@@ -30,43 +31,61 @@
         <div class="view view-main">
             <!-- Initial Page, "data-name" contains page name -->
             <div data-name="start" class="page color-theme-blue">
-                <div class="page-content bg-dark-blue display-flex flex-direction-column align-items-center justify-content-center">
-    
-                <div class="illustration-header margin-top">
-                    <img src="https://via.placeholder.com/300x200" class="img-fluid" alt="Agendamento">
-                </div>
-
-                <div class="block text-align-center no-margin-bottom">
-                    <h2 class="text-color-white font-weight-bold">Agende sua reunião inicial gratuita!</h2>
-                    <p class="text-color-white opacity-80">Você pode conhecer seu psicólogo marcando uma videochamada grátis de 15 min.</p>
-                </div>
-
-                <div class="card card-profile margin-horizontal">
-                    <div class="card-content card-content-padding text-align-center">
-                        <div class="avatar-wrapper margin-bottom">
-                            <img src="img/serena.png" class="profile-img" alt="Dra. Serena">
-                        </div>
-                        <div class="profile-info">
-                            <div class="display-flex justify-content-center align-items-center">
-                                <span class="profile-name">Dra. Serena Dias</span>
-                                <i class="icon f7-icons color-green size-18 margin-left-half">checkmark_seal_fill</i>
-                            </div>
-                            <p class="profile-role">Psicóloga profissional</p>
-                            <a href="#" class="link text-color-blue font-weight-bold margin-top-half">VER PERFIL ></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="block actions-wrapper full-width margin-top">
-                    <button class="button button-large button-fill button-raised bg-light-blue color-white font-weight-bold">
-                        AGENDAR CHAMADA INICIAL
-                    </button>
+                <div class="page-content">
                     
-                    <div class="text-align-center margin-top">
-                        <a href="/home/" class="link text-color-white underline">SAIR PARA A TELA INICIAL</a>
+                    <div class="decoracao">
+                        <img src="img/veri_psico_deco.png" alt="muie" class="decoracao_img">
+                    </div>
+
+                    <div class="custom_flex">
+                        <div class="block text-align-center custom_texts_box">
+                            <h2 class="custom_h2 inter_font">Agende sua reunião inicial gratuita!</h2>
+                            <p class="custom_p nunito_font">Você pode conhecer seu psicólogo marcando uma videochamada grátis de 15 min.</p>
+                        </div>
+
+                        <div class="card card-profile margin-horizontal">
+                            <div class="card-content card-content-padding text-align-center">
+                                <div class="avatar-wrapper margin-bottom">
+                                    <img src="img/serena.png" class="profile-img" alt="Dra. Serena">
+                                </div>
+                                <div class="profile-info">
+                                    <div class="display-flex justify-content-center align-items-center">
+                                        <span class="profile-name nunito_font">Dra. Serena Dias</span>
+                                        <i class="mdi mdi-check-decagram size-18 margin-left-half custom_icon"></i>
+                                    </div>
+                                    <p class="profile-role nunito_font">Psicóloga profissional</p>
+                                    <a href="/perfil/" class="link custom_perfil_link nunito_font">VER PERFIL></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="block actions-wrapper full-width div_avancar">
+                        <!-- BOTÃO COMEÇAR -->
+                        <div class="block text-align-center custom_button">
+                            <a class="button button-fill text_button inter_font" href="/home/">AGENDAR CHAMADA INICIAL</a>
+                        </div>
+                        
+                        <div class="text-align-center margin-top">
+                            <a href="/home/" class="link custom_link nunito_font">SAIR PARA A TELA INICIAL</a>
+                        </div>
+                    </div>
+
+                    <!-- NUVENS ANIMADAS -->
+                    <img src="img/Nuvem.png" class="nuvens nuvem_1">
+                    <img src="img/Nuvem.png" class="nuvens nuvem_2">
+                    <img src="img/Nuvem.png" class="nuvens nuvem_3">
+
+                    <!-- Ondas ANIMADAS -->
+                    <div class="caixa_p_ondas"></div>
+
+                    <div class="div_ondas">
+                        <div class="ondas onda_1"></div>
+                        <div class="ondas onda_2"></div>
+                        <div class="ondas onda_3"></div>
+                        <div class="ondas onda_4"></div>
                     </div>
                 </div>
-            </div>
             </div>
         </div>
     </div>
