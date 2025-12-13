@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="css/materialdesignicons.min.css">
 
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/cadastro.css">
+    <link rel="stylesheet" href="css/entrar.css">
 </head>
 
 <body>
@@ -29,12 +29,14 @@
         <!-- Your main view, should have "view-main" class -->
         <div class="view view-main">
             <!-- Initial Page, "data-name" contains page name -->
-            <div data-name="login" class="page color-theme-blue">
-                <div class="page-content login-page">
+            <div data-name="start" class="page color-theme-blue">
+                <div class="page-content intro-page">
 
-
-                    <!-- FORMULÁRIO -->
-                    <div class="block login-form">
+                    <div class="formulario">
+                        <!-- LOGO -->
+                        <div class="clearmind_logo">
+                            <img src="img/logo_completo.png" class="logo-intro">
+                        </div>
 
                         <!-- EMAIL -->
                         <div class="list no-hairlines-between">
@@ -66,15 +68,16 @@
                         </div>
 
                         <!-- DIVISOR -->
-                        <div class="divider">
+                        <div class="divider text-align-center">
                             <span>ou</span>
                         </div>
 
-                        <!-- GOOGLE LOGIN -->
-                        <a class="button button-fill google-btn" href="/perguntas/">
-                            <img src="img/icon_google.png" class="google-icon">
-                            <span>entrar com Google</span>
-                        </a>
+                        <div class="block text-align-center start-button">
+                            <a class="button button-fill text_button" href="/perguntas/">
+                                <i class="mdi mdi-google benefit-icon"></i>
+                                COMEÇAR AGORA
+                            </a>
+                        </div>
 
                     </div>
 
@@ -99,6 +102,7 @@
             </div>
         </div>
     </div>
+
     <!-- Path to Framework7 Library Bundle JS-->
     <script type="text/javascript" src="lib/framework7-bundle.min.js"></script>
 	<!-- jQuery -->
@@ -109,4 +113,3 @@
 </body>
 
 </html>
-

@@ -1,18 +1,4 @@
-* {
-    --dark_blue: #3a5f7d;
-    --t_dark_blue: #3a5f7dd0;
-    --blue: #aec9ff;
-    --white: #fff8f0;
-    --black: #000000;
-    --gray: #d6d6d6;
-
-    margin: 0;
-    padding: 0;
-}
-
-/* .texto_e_card {
-    border: 2px solid red;
-} */
+@import url(main.css);
 
 /* ===== GERAL ===== */
 
@@ -22,19 +8,15 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: center;
+    align-items: center
 }
 
-/* ===== LOGO ===== */
-
-.clearmind_logo {
-    position: absolute;
-    top: -25px;
-    left: 30px;
+.formulario {
+    z-index: 5;
 }
 
-.logo-intro {
-    width: 150px;
+.footer-login {
+    z-index: 5;
 }
 
 /* ===== TEXTOS ===== */

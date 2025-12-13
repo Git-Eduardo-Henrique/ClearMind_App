@@ -22,23 +22,25 @@ const perguntas = [
         titulo: "O que mais motivou você a buscar ajuda?",
         opcoes: ["Ansiedade", "Estresse", "Tristeza", "Outros"]
     }
-];
+]
 
 // Índice da pergunta atual
-let indice = 0;
+let indice = 0
 
 // Elementos da página
-const tituloEl = document.querySelector(".titulo_pergunta");
-const botoesDiv = document.querySelector(".botoes_div");
+const tituloEl = document.querySelector(".titulo_pergunta")
+const botoesDiv = document.querySelector(".botoes_div")
+
+const respostas = []
 
 // Função que mostra a pergunta atual
 function mostrarPergunta() {
-    const atual = perguntas[indice];
+    const atual = perguntas[indice]
 
-    tituloEl.textContent = atual.titulo;
+    tituloEl.textContent = atual.titulo
 
     // Limpa os botões antigos
-    botoesDiv.innerHTML = "";
+    botoesDiv.innerHTML = ""
 
     // Cria novos botões com base nas opções
     atual.opcoes.forEach(op => {
@@ -53,11 +55,17 @@ function mostrarPergunta() {
 
         // Ao clicar em qualquer opção
         btn.addEventListener("click", () => {
-            proximaPergunta();
+            salvarResposta(op)
+            proximaPergunta()
         });
 
-        botoesDiv.appendChild(btn);
+        botoesDiv.appendChild(btn)
     });
+}
+
+function salvarResposta(opcaoEscolhida) {
+        respostas.push(opcaoEscolhida)
+        console.log("Respostas até agora:", respostas)
 }
 
 // Função para avançar
@@ -75,4 +83,4 @@ function proximaPergunta() {
 }
 
 // Inicializa mostrando a primeira
-mostrarPergunta();
+mostrarPergunta()
