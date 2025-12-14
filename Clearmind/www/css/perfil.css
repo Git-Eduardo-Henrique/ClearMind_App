@@ -8,7 +8,11 @@
 
     gap: 1rem;
 
-    background-color: var(--white);
+    background-image: url('../img/fundo_app.png');
+    background-size: cover;   
+    background-position: center; 
+    background-repeat: no-repeat;
+    height: 100vh;
 }
 
 /* card psicologa */

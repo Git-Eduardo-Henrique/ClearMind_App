@@ -1,18 +1,36 @@
-/* Background suave com padrão de ícones (se você tiver a imagem de fundo) */
-.bg-custom {
-    background-color: #FDF9F3 !important; /* Cor bege de fundo */
-    background-image: url('../img/pattern.png'); /* Seus ícones flutuantes */
-    background-size: cover;
+.mensg_page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    padding-top: 1.5rem;
+    gap: 4rem;
+
+    background-image: url('../img/fundo_app.png');
+    background-size: cover;      
+    background-position: center; 
+    background-repeat: no-repeat;
+    height: 100vh;
 }
 
+.div_msg {
+    width: 90%;
+}
+
+.titulo_mensagens{
+    font-weight: bold;
+    font-size: 1.5rem;
+}
 /* Estilização dos Cards */
 .card-item {
-    background: #fff !important;
-    border: 1px solid #333; /* Borda preta fina como no design */
-    border-radius: 15px !important;
+    background: #fff;
+    border: 2px solid var(--dark_blue);
+    border-radius: 10px;
     margin-bottom: 12px;
     overflow: hidden;
     list-style: none;
+    
 }
 
 .card-item .item-content {

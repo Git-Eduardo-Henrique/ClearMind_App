@@ -1,0 +1,28 @@
+@import url(main.css);
+
+.div_tab_bar_home {
+    position: absolute;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    border: 2px var(--dark_blue) solid;
+    bottom: 2rem;
+
+    width: 90%;
+    height: 3rem;
+
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.tab_icons {
+    color: #6e6e6e;
+    font-size: 2.5rem;
+}
+
+.tab_icons_current {
+    color: var(--blue);
+    font-size: 2.5rem;
+}

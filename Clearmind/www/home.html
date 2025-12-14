@@ -18,7 +18,10 @@
     <!--Ícones Material Design-->
     <link rel="stylesheet" href="css/materialdesignicons.min.css">
 
+    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/perfil.css">
+    <link rel="stylesheet" href="css/tabbar.css">
 
 </head>
 
@@ -28,112 +31,89 @@
 
         <!-- Your main view, should have "view-main" class -->
         <div class="view view-main">
-
-            <!-- TAB BAR-->
-            <div class="toolbar toolbar-bottom">
-                <div class="toolbar-inner display-flex">
-                    <a href="/home/" class="tab-link link active">
-                        <i class="mdi mdi-home"></i>
-                    </a>
-                    <a href="/sessoes/" class="tab-link link">
-                        <i class="mdi mdi-calendar-month"></i>
-                    </a>
-                    <a href="/mensagens/" class="tab-link link">
-                        <i class="mdi mdi-message-text"></i>
-                    </a>
-
-                </div>
-            </div>
-
             <!-- Initial Page, "data-name" contains page name -->
             <div data-name="home" class="page color-theme-blue">
                 <!-- Scrollable page content -->
-                <div class="page-content home-f7">
+                <div class="page-content page_home">
 
-                    <!-- HEADER (Logo + Perfil) -->
-                    <div class="block header-f7 display-flex justify-content-between align-items-center">
-                        <!-- Logo (trocar imagem depois) -->
-                        <img src="img/logo_completo.png" class="logo-f7" alt="Logo">
-
-                        <!-- Ícone de perfil -->
-                        <i class="mdi mdi-bell"></i>
-                        <i class="mdi mdi-account-circle profile-icon"></i>
+                    <div class="clearmind_logo_home">
+                        <img src="img/logo_completo.png" class="logo_clear">
                     </div>
 
-                    <!-- CARD DA PSICÓLOGA -->
-                    <div class="card card-outline therapist-card-f7">
-                        <div class="card-content card-content-padding">
+                    <!-- HEADER (Logo + Perfil) -->
+                    <div class="block header_home">
+                        <!-- Ícone de perfil -->
+                        <i class="mdi mdi-bell header_icons"></i>
+                        <i class="mdi mdi-account-circle header_icons"></i>
+                    </div>
 
-                            <div class="display-flex align-items-center">
-                                <!-- Foto -->
-                                <img src="img/serena.png" class="therapist-photo-f7">
-
-                                <div class="margin-left">
-                                    <div class="therapist-name-f7">
-                                        Dra. Serena Dias 
-                                        <i class="mdi mdi-check-decagram verified-icon"></i>
-                                    </div>
-                                    <div class="therapist-role-f7">Psicóloga profissional</div>
-                                </div>
-
-                                <i class="mdi mdi-chevron-right therapist-nav-icon"></i>
+                    <div class="div_card_home">
+                        <div class="div_info_pscio">
+                            <img src="img/serena.png" alt="serena">
+                            <div class="info_pscio_texts">
+                                <h2 class="nunito_font">Dra. Serena Dias</h2>
+                                <span class="nunito_font serena_span">Meu terapeuta</span>
                             </div>
-
-                            <!-- BOTÕES -->
-                            <div class="display-flex justify-content-space-between margin-top">
-                                <a class="button button-fill color-blue width-50">
-                                    <i class="mdi mdi-calendar-plus"></i>
-                                    <span>Reservar horário</span>
+                        </div>
+                        <div class="botoes_card_psico">
+                            <div class="text-align-center">
+                                <a class="link botoes_psico_pequeno">
+                                    <i class="mdi mdi-refresh"></i>
                                 </a>
-
-                                <a class="button button-outline color-blue width-50">
-                                    <i class="mdi mdi-message-text"></i>
+                            </div>
+                            <div class="text-align-center">
+                                <a href="/sessoes/" class="link nunito_font botoes_psico">Reservar horário</a>
+                            </div>
+                            <div class="text-align-center">
+                                <a href="/mensagens/" class="link botoes_psico_pequeno">
+                                    <i class="mdi mdi-forum"></i>
                                 </a>
                             </div>
                         </div>
                     </div>
 
                     <!-- PRÓXIMAS SESSÕES -->
-                    <div class="block-title">Suas Próximas Sessões:</div>
+                    <div class="home_sessoes">
+                        <div class="prox_sessoes nunito_font">Suas Próximas Sessões:</div>
 
-                    <div class="card card-outline next-session-card-f7">
-                        <div class="card-content card-content-padding display-flex align-items-center">
+                            <div class="card-content card-content-padding sessoes_card">
+                                <!-- Botão entrar -->
+                                <a class="button button-fill ingressar_bt session-btn-f7 nunito_font">
+                                    <i class="mdi mdi-phone"></i>
+                                    Ingressar
+                                </a>
 
-                            <!-- Botão entrar -->
-                            <a class="button button-fill color-blue session-btn-f7 margin-right">
-                                <i class="mdi mdi-login"></i> Ingressar
-                            </a>
-
-                            <!-- Informações -->
-                            <div>
-                                <div class="session-date-f7">Hoje</div>
-                                <div class="session-time-f7">23 de Outubro de 2026 | 13:30 - 13:45</div>
+                                <!-- Informações -->
+                                <div>
+                                    <div class="session-date-f7 nunito_font">Hoje</div>
+                                    <div class="session-time-f7 nunito_font">23 de Outubro de 2026 | 13:30 - 13:45</div>
+                                </div>
                             </div>
-                        </div>
                     </div>
+                    <div class="home_pacotes">
+                        <div class="pacotes_text nunito_font">Pacotes:</div>
 
-                    <!-- PACOTES -->
-                    <div class="block-title">Pacotes</div>
-
-                    <div class="card card-outline package-card-f7">
-                        <div class="card-content card-content-padding display-flex justify-content-between align-items-center">
-
-                            <div>
-                                <div class="package-title-f7">Sessões de Terapia Restantes</div>
-                                <div class="package-desc-f7">Veja seus pacotes disponíveis</div>
+                        <div class="card-content card-content-padding pacotes_card">
+                                <!-- Informações -->
+                            <div class="div_infos">
+                                <div>
+                                    <div class="session-date-f7 nunito_font">Sessões de Terapia Restantes</div>
+                                    <div class="session-time-f7 nunito_font">Veja seus pacotes disponíveis</div>
+                                </div>
+                                <div class="package-badge-f7">1</div>
                             </div>
 
-                            <div class="package-badge-f7">1</div>
-                        </div>
-
-                        <div class="card-footer">
-                            <a class="button button-fill color-lightblue width-100">
+                            <a class="button button-fill ingressar_bt btn_check_pla nunito_font">
                                 Checar Planos de Pacotes
                             </a>
                         </div>
                     </div>
 
-                    <div style="height: 80px;"></div>
+                    <div class="div_tab_bar_home">
+                        <a href=""><i class="mdi mdi-home tab_icons_current"></i></a>
+                        <a href="/sessoes/"><i class="mdi mdi-calendar-month-outline tab_icons"></i></a>
+                        <a href="/mensagens/"><i class="mdi mdi-message-text tab_icons"></i></a>
+                    </div>
                 </div>
             </div>
         </div>

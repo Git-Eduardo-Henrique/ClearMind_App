@@ -1,58 +1,100 @@
+@import url(main.css);
+
 /* ===== BACKGROUND ===== */
-.home-f7 {
-    background: #f7f1eb;
+.page_home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 4rem;
+
+    background-image: url('../img/fundo_app.png');
+    background-size: cover;      
+    background-position: center; 
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.clearmind_logo_home {
+    position: absolute;
+    top: -4.7rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.logo_clear {
+    width: 250px;
 }
 
 /* ===== HEADER ===== */
-.logo-f7 {
-    width: 130px;
+.header_home {
+    position: absolute;
+    top: -5px;
+    right: 20px;
+
+    gap: 0.5rem;
 }
 
-.profile-icon {
-    font-size: 34px;
-    color: #163b5c;
+.header_icons {
+    color: var(--black);
+    font-size: 32px;
 }
 
-/* ===== CARD PSICÓLOGA ===== */
-.therapist-card-f7 {
-    border-radius: 14px;
-}
-
-.therapist-photo-f7 {
-    width: 58px;
-    height: 58px;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-.therapist-name-f7 {
-    font-size: 18px;
-    font-weight: 600;
+/* card psicologa */
+.div_card_home {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 4px;
-}
+    justify-content: center;
 
-.verified-icon {
-    color: #4CAF50;
-    font-size: 18px;
-}
+    gap: 1rem;
 
-.therapist-role-f7 {
-    font-size: 14px;
-    color: #555;
-}
+    width: 100%;
+    height: 12rem;
 
-.therapist-nav-icon {
-    margin-left: auto;
-    font-size: 22px;
-    color: #666;
+    background-color: #ffffff;
+
+    border-top: 2px solid var(--dark_blue);
+    border-bottom: 2px solid var(--dark_blue);
 }
 
 /* ===== SESSÕES ===== */
-.session-btn-f7 {
+.home_sessoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 0.5rem;
+
+    width: 100%;
+}
+
+.prox_sessoes , .pacotes_text {
+    color: var(--black);
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+
+    text-shadow: 2px 2px 8px var(--white);
+}
+
+.sessoes_card , .pacotes_card {
+    background-color: #ffffff;
+    width: 80%;
+    border: 1px solid var(--dark_blue);
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.ingressar_bt {
+    background-color: var(--dark_blue);
     min-width: 110px;
     text-align: center;
+    gap: 0.5rem;
 }
 
 .session-date-f7 {
@@ -66,35 +108,48 @@
 }
 
 /* ===== PACOTES ===== */
-.package-card-f7 {
-    border-radius: 14px;
+.home_pacotes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 0.5rem;
+
+    width: 100%;
+}
+.pacotes_card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    gap: 1rem;
 }
 
-.package-title-f7 {
-    font-size: 16px;
-    font-weight: 600;
+.div_infos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
 }
 
-.package-desc-f7 {
-    font-size: 14px;
-    color: #555;
+.btn_check_pla {
+    background-color: var(--blue);
+    width: 100%;
+    text-align: center;
+    gap: 0.5rem;
 }
 
 .package-badge-f7 {
     width: 38px;
     height: 38px;
     border-radius: 12px;
-    background: #dbe6ff;
+    border: 2px solid var(--blue);
+    background: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #2a4fa3;
+    color: var(--blue);
     font-size: 18px;
     font-weight: 700;
-}
-
-/* ===== BOTÃO LIGHT BLUE ===== */
-.color-lightblue {
-    background: #cfe0ff;
-    color: #1a3a70;
 }
