@@ -123,10 +123,6 @@
     font-size: 0.8rem;
 }
 
-.ondas_veri_psico {
-    bottom: 67%;
-}
-
 .caixa_p_ondas {
     position: absolute;
     bottom: 0;
@@ -148,4 +144,82 @@
 
 .decoracao_img {
     width: 150px;
+}
+
+/* ondas */
+
+.div_ondas_veri {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.ondas_veri {
+    position: absolute;
+    bottom: 67%;
+    left: 0;
+
+    width: 100%;
+    height: 330px;
+
+    background: url(../img/wave.png);
+    background-size: 1000px 330px;
+}
+
+.onda_1_veri {
+    animation: animate 30s linear infinite;
+    z-index: 4;
+    bottom: -35;
+}
+.onda_2_veri {
+    animation: animate2 15s linear infinite;
+    opacity: 0.7;
+    z-index: 3;
+    bottom: -25;
+}
+.onda_3_veri {
+    animation: animate3 30s linear infinite;
+    opacity: 0.5;
+    z-index: 2;
+    bottom: -15;
+}
+.onda_4_veri {
+    animation: animate4 15s linear infinite;
+    opacity: 0.3;
+    z-index: 1;
+    bottom: -10;
+}
+
+@keyframes animate {
+    0% {
+        background-position-x: 0;
+    }
+    100% {
+        background-position-x: 1000px;
+    }
+}
+@keyframes animate2 {
+    0% {
+        background-position-x: 0;
+    }
+    100% {
+        background-position-x: 1000px;
+    }
+}
+@keyframes animate3 {
+    0% {
+        background-position-x: 0;
+    }
+    100% {
+        background-position-x: -1000px;
+    }
+}
+@keyframes animate4 {
+    0% {
+        background-position-x: 0;
+    }
+    100% {
+        background-position-x: -1000px;
+    }
 }

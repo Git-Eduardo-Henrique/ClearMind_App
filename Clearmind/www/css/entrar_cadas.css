@@ -127,10 +127,36 @@
     color: var(--dark_blue);
 }
 
-.nuven_1_ent_cad {
-    top: 15px;
+/* ===== NUVENS ANIMADAS ===== */
+
+.nuvens_ent_cad  {
+    position: absolute;
+    width: 180px;
+    top: 80px;
+    animation: cloud-move 15s linear infinite;
+
+    z-index: -2;
 }
 
-.nuven_2_ent_cad {
+.nuvem_1_ent_cadas {
+    top: 15px;
+    left: -100px;
+    animation-delay: 0s;
+}
+
+.nuvem_2_ent_cadas {
     top: 280px;
+    left: -100px;
+    animation-delay: 5s;
+}
+
+.nuvem_3_ent_cadas {
+    top: 500px;
+    left: -100px;
+    animation-delay: 2s;
+}
+
+@keyframes cloud-move {
+    0% { transform: translateX(-200px); }
+    100% { transform: translateX(120vw); }
 }
