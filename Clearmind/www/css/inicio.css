@@ -11,18 +11,6 @@
     align-items: center;
 }
 
-/* ===== LOGO ===== */
-
-.clearmind_logo {
-    position: absolute;
-    top: -25px;
-    left: 30px;
-}
-
-.logo-intro {
-    width: 150px;
-}
-
 /* ===== TEXTOS ===== */
 
 .intro-title {

@@ -2,7 +2,7 @@
 
 /* ===== GERAL ===== */
 
-.intro-page {
+.entrar_cadas_page {
     background: var(--white);
 
     display: flex;
@@ -24,23 +24,9 @@
     z-index: 5;
 }
 
-/* ===== TEXTOS ===== */
-
-.intro-title {
-    font-size: 28px;
-    color: #3a5f7d;
-    margin-top: 10px;
-}
-
-.intro-desc {
-    color: var(--black);
-    font-size: 15px;
-    padding: 0 20px;
-}
-
 /* ===== BOTÃO ===== */
 
-.start-button {
+.botao_google {
     width: 90%;
     font-size: 36px;
     color: var(--dark_blue);
@@ -64,7 +50,7 @@
     font-size: 1.1rem;
 }
 
-.benefit-icon {
+.icone_google {
     height: 26px;
 }
 
@@ -80,8 +66,6 @@
     font-size: 1.1em;
     text-decoration: underline;
 }
-
-/**/
 
 .div_entrar_ou {
     display: flex;
@@ -111,9 +95,7 @@
     color: var(--black);
 }
 
-/**/
-
-.custom_icon {
+.icones_entrar_cadas {
     font-size: 22px;
     color: var(--dark_blue);
 }
@@ -145,10 +127,10 @@
     color: var(--dark_blue);
 }
 
-.nuvem_1 {
+.nuven_1_ent_cad {
     top: 15px;
 }
 
-.nuvem_2 {
+.nuven_2_ent_cad {
     top: 280px;
 }

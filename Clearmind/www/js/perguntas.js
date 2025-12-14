@@ -45,10 +45,10 @@ function mostrarPergunta() {
     // Cria novos botões com base nas opções
     atual.opcoes.forEach(op => {
         const btn = document.createElement("div");
-        btn.className = "block text-align-center custom-button";
+        btn.className = "block text-align-center botao_perg";
 
         btn.innerHTML = `
-            <a class="button button-fill text_button inter_font" href="#">
+            <a class="button button-fill botao_perg_text inter_font" href="#">
                 ${op}
             </a>
         `;

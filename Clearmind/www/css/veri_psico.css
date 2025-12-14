@@ -1,6 +1,6 @@
 @import url(main.css);
 
-.page-content {
+.veri_psico_page {
     background: var(--white);
 
     display: flex;
@@ -9,13 +9,13 @@
     align-items: center;
 }
 
-.custom_button {
+.botao_agendar {
     width: 80%;
     font-size: 36px;
     color: var(--dark_blue);
 }
 
-.text_button {
+.botao_agendar_text {
     background-color: var(--blue);
     color: var(--white);
 
@@ -123,7 +123,7 @@
     font-size: 0.8rem;
 }
 
-.ondas {
+.ondas_veri_psico {
     bottom: 67%;
 }
 

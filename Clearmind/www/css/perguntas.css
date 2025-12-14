@@ -2,7 +2,7 @@
 
 /* ---------- GERAL ---------- */
 
-.intro-page {
+.perg_page {
     background: var(--white);
 
     display: flex;
@@ -12,14 +12,14 @@
     gap: 200px
 }
 
-.titulo_pergunta{
+.titulo_pergunta {
     text-transform: uppercase;
     color: var(--dark_blue);
 }
 
 /* ===== BOTÃO ===== */
 
-.custom-button {
+.botao_perg {
     width: 45vh;
     font-size: 36px;
     color: var(--dark_blue);
@@ -28,7 +28,7 @@
     margin: 10px;
 }
 
-.text_button {
+.botao_perg_text {
     background-color: var(--white);
     color: var(--dark_blue);
 
