@@ -5,6 +5,10 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    gap: 1rem;
+
+    background-color: var(--white);
 }
 
 /* card psicologa */
@@ -12,11 +16,39 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+
+    gap: 1rem;
+
+    width: 90%;
+    height: 12rem;
+
+    background-color: #ffffff;
+
+    border: 2px solid var(--dark_blue);
+    border-radius: 10px;
 }
 
 .div_info_pscio {
     display: flex;
     flex-direction: row;
+    gap: 1rem;
+
+    width: 100%;
+}
+
+.div_info_pscio img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+
+    margin-left: 1rem;
+}
+
+.serena_span {
+    font-style: italic;
+    color: var(--dark_blue);
 }
 
 .info_pscio_texts {
@@ -25,8 +57,40 @@
 }
 
 .botoes_card_psico {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    align-content: center; 
+    justify-content: center; 
+
+    width: 90%;
+    height: 3rem;
+}
+
+.botoes_psico {
+    font-weight: bold;
+    font-size: 1.2rem;
+
+    background-color: var(--dark_blue);
+    color: #ffffff;
+
+    border-radius: 5px;   
+    
+    width: 95%;
+    height: 100%;
+}
+
+.botoes_psico_pequeno {
+    font-weight: bold;
+    font-size: 1.2rem;
+
+    background-color: var(--dark_blue);
+    color: #ffffff;
+
+    border-radius: 5px;
+
+    width: 95%;
+
+    height: 2.5rem;
 }
 
 /* tags */
@@ -34,27 +98,79 @@
 .div_tags {
     display: flex;
     flex-direction: column;
+    align-items: center;
+
+    gap: 0.5rem;
+
+    width: 90%;
 }
 
 .tags {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 0.5rem 0.5rem;
+
+    width: 80%;
+}
+
+.tags span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--dark_blue);
+    border-radius: 10px;    
+    border: 2px solid #ffffff;
+
+    color: #ffffff;
+
+    height: 2rem;
 }
 
 /* bio e listas */
 
 .bio {
-    
+    background-color: #ffffff;
+    width: 90%;
+
+    border-radius: 10px;    
+    border: 2px solid var(--dark_blue)
 }
 
 .bio_titulo{
-
+    padding-top: 1rem;
+    color: var(--dark_blue);
 }
 
 .bio_p {
-
+    text-align: justify; 
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 .bio_list {
-    
+    padding-left: 1rem;
+    padding-right: 1rem;
+    list-style-type: none;
+}
+
+/* navbar */
+.navbar_perfil_fundo {
+    background-color: #ffffff;
+}
+
+.nav_titulo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--dark_blue);
+}
+
+.nav_icone {
+  font-size: 28px;
+  color: var(--dark_blue);
 }
