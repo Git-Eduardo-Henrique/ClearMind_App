@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- Color theme for statusbar (Android only) -->
+    <meta name="theme-color" content="#2196f3">
+    <!-- Your app title -->
+    <title>Clearmind Home</title>
+    <!-- Path to Framework7 Library Bundle CSS -->
+    <link rel="stylesheet" href="lib/framework7-bundle.min.css">
+    <!-- CSS PERSONALIZADO PARA MENU-->
+    <link rel="stylesheet" href="css/personalizado.css">
+    <!--Ícones Material Design-->
+    <link rel="stylesheet" href="css/materialdesignicons.min.css">
+
+    <link rel="stylesheet" href="css/agendamento.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <!-- App root element -->
+    <div id="app">
+
+        <!-- Your main view, should have "view-main" class -->
+        <div class="view view-main">
+            <!-- Initial Page, "data-name" contains page name -->
+            <div data-name="start" class="page color-theme-blue">
+                <div class="navbar">
+                    <div class="navbar-bg navbar_perfil_fundo_agenda"></div>
+                        <div class="navbar-inner sliding">
+                            <div class="left">
+                                <a class="link back" href="veri_psico.html">
+                                    <i class="mdi mdi-arrow-left-circle nav_icone_agenda "></i>
+                                </a>
+                            </div>
+                        <div class="nav_titulo_agenda  nunito_font">AGENDAMENTO</div>
+                    </div>
+                </div>
+
+                <div class="page-content page_agendamento">
+                    <div class="div_agenda_full">
+                        <div class="list media-list no-chevron margin-horizontal div_msg">
+                            <ul>
+                                <li class="card-item margin-bottom">
+                                    <a href="#" class="item-link item-content">
+                                        <div class="item-media">
+                                            <img src="img/serena.png" width="64" class="rounded-avatar" alt="Dra. Serena">
+                                        </div>
+                                        <div class="item-inner">
+                                            <div class="item-title-row">
+                                                <div class="item-title text-color-black font-weight-bold">Dra. Serena Dias</div>
+                                            </div>
+                                            <div class="item-subtitle italic-text">Meu terapeuta</div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <p class="nunito_font custom_p_agenda text-align-center">Você pode escolher até 3 possíveis horários para a consulta gratuita de 45 minutis!</p>
+                    </div>
+                    
+
+                    <div class="calendar-container">
+
+                        <div class="calendar-title">
+                            Disponibilidade e Horários
+                        </div>
+
+                        <div id="calendar-inline"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Path to Framework7 Library Bundle JS-->
+    <script type="text/javascript" src="lib/framework7-bundle.min.js"></script>
+	<!-- jQuery -->
+	<script type="text/javascript" src="lib/jquery-3.7.0.min.js"></script>	
+    <!-- Roteamento do app-->
+    <script type="text/javascript" src="js/routes.js"></script>
+    <script src="cordova.js"></script>
+</body>
+
+</html>

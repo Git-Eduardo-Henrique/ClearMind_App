@@ -252,6 +252,42 @@ var app = new Framework7({
 		},
 	  }
     },
+	{
+      path: '/agendamento/',
+      url: 'agendamento.html',
+      animate: false,
+	  on: {
+		pageBeforeIn: function (event, page) {
+		// fazer algo antes da página ser exibida
+		},
+		pageAfterIn: function (event, page) {
+		// fazer algo depois da página ser exibida
+		},
+		pageInit: function (event, page) {
+		// fazer algo quando a página for inicializada
+			app.calendar.create({
+				containerEl: '#calendar-inline',
+				value: [new Date()],
+				weekHeader: true,
+				renderToolbar: function () {
+				return `
+					<div class="calendar-header">
+					<div class="calendar-month-year"></div>
+					</div>
+				`;
+				},
+				on: {
+				change: function (calendar, value) {
+					console.log('Dia clicado:', value[0]);
+				}
+				}
+			})
+		},
+		pageBeforeRemove: function (event, page) {
+		// fazer algo antes da página ser removida do DOM
+		},
+	  }
+    },
     {
       path: '/mensagens/',
       url: 'mensagens.html',

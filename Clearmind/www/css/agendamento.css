@@ -1,0 +1,156 @@
+@import url(main.css);
+
+/* ===== BACKGROUND ===== */
+.page_agendamento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 4rem;
+
+    background-image: url('../img/fundo_app.png');
+    background-size: cover;   
+    background-position: center; 
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+/* navbar */
+.navbar_perfil_fundo_agenda  {
+    background-color: #ffffff;
+}
+
+.nav_titulo_agenda {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--dark_blue);
+}
+
+.nav_icone_agenda {
+  font-size: 28px;
+  color: var(--dark_blue);
+}
+
+/* calendario */
+
+.calendar-container {
+  background: #fffaf3;
+  padding: 16px;
+  border-radius: 12px;
+  margin: 16px;
+}
+
+.calendar-title {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #000;
+}
+
+/* cabeçalho do calendário */
+.calendar-header {
+  background: transparent !important;
+  color: var(--dark_blue);
+  border: none;
+}
+
+/* centralizar mês e ano */
+.calendar-header .calendar-month-year {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+/* dias clicáveis */
+.calendar-day {
+  font-size: 14px;
+}
+
+#calendar-inline .calendar-day-selected {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+#calendar-inline {
+  width: 100%;
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+/* grid mais espaçada */
+#calendar-inline .calendar-days {
+  gap: 6px;
+}
+
+/* dias quadrados e maiores */
+#calendar-inline .calendar-day {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+
+  font-size: 14px;
+  border-radius: 8px; /* menos redondo */
+}
+
+#calendar-inline .calendar-week-header {
+  margin-bottom: 8px;
+}
+
+#calendar-inline .calendar-week-header span {
+  font-size: 12px;
+  font-weight: bold;
+  color: var(--dark_blue);
+}
+
+.calendar-container {
+  background: #fffaf3;
+  padding: 20px;
+  border-radius: 16px;
+  width: 90%;
+  max-width: 360px;
+}
+
+
+/* card */
+.div_msg {
+    width: 90%;
+}
+
+.custom_p_agenda {
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 1rem
+}
+
+/* Estilização dos Cards */
+.card-item {
+    background: #fff;
+    border: 2px solid var(--dark_blue);
+    border-radius: 10px;
+    margin-bottom: 12px;
+    overflow: hidden;
+    list-style: none;
+    
+}
+
+.card-item .item-content {
+    padding: 10px;
+}
+
+/* Avatar Redondo */
+.rounded-avatar {
+    border-radius: 50%;
+    border: 1px solid #ccc;
+}
+
+.div_agenda_full {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center
+}

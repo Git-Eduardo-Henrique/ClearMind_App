@@ -1,20 +1,79 @@
-/* Fundo com ícones (coloque sua imagem depois) */
-.background-pattern {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: url('../img/background-placeholder.png') center/cover no-repeat;
-    opacity: 0.15; /* efeito suave igual ao do mockup */
-    pointer-events: none;
+@import url(main.css);
+
+.sessoes_page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    padding-top: 1.5rem;
+    gap: 4rem;
+
+    background-image: url('../img/fundo_app.png');
+    background-size: cover;      
+    background-position: center; 
+    background-repeat: no-repeat;
+    height: 100vh;
 }
 
-/* Título */
-.page-title h2 {
-    margin-left: 20px;
-    font-weight: 700;
-    letter-spacing: 1px;
+.titulo_sessoes{
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.sessoes_agendadas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+}
+
+.div_info_pscio_sessoes {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+
+    width: 100%;
+}
+
+.div_info_pscio_sessoes img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+
+    margin-left: 1rem;
+}
+
+.sessoes_card_ing {
+    background-color: #ffffff;
+    width: 80%;
+    border: 1px solid var(--dark_blue);
+    border-radius: 10px;
+ 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.ingressar_sessao {
+    background-color: var(--dark_blue);
+    min-width: 110px;
+    text-align: center;
+    gap: 0.5rem;
+}
+
+.session_date {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.session_time {
+    font-size: 14px;
+    color: #666;
 }
 
 /* Tabs */
@@ -34,42 +93,10 @@
     color: white;
 }
 
-/* CARD DE SESSÃO */
-.session-card {
-    margin: 15px;
-    border-radius: 14px;
-}
-
-.session-header {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.session-avatar {
-    width: 42px;
-    height: 42px;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-.session-name {
-    font-weight: 600;
-}
-
-.session-action {
-    margin-top: 15px;
-}
-
-.session-time {
-    margin-top: 10px;
-    color: #555;
-}
-
 /* Botões principais */
 .main-buttons {
-    margin: 20px;
     text-align: center;
+    width: 60%;
 }
 
 .chama-teste {
@@ -79,28 +106,29 @@
 }
 
 .agendar-btn {
-    border-radius: 12px;
-    font-weight: 600;
+    border: 1px solid var(--dark_blue);
+    border-radius: 10px;
+    font-weight: bold;
+    background-color: #fff;
+    color: var(--dark_blue);
 }
 
-/* Toolbar inferior */
-.main-toolbar .link {
-    font-size: 28px;
-    color: #444;
+.botao_ativado {
+    background-color: var(--dark_blue);
+    color: #fff;
 }
 
-.badge-parent {
-    position: relative;
+
+.botao_n_ativado {
+    background-color: #fff;
+    color: var(--dark_blue);
 }
 
-.badge {
-    position: absolute;
-    top: -2px;
-    right: -6px;
-}
+.ing_infos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
 
-/* Pequenos ajustes */
-.small-text {
-    font-size: 13px;
-    color: #666;
+    width: 100%;
 }
