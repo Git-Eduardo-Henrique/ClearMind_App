@@ -1,0 +1,32 @@
+Tarefas "simples":
+
+- Simplificar código
+
+- logo tela home
+- ajustar proximas sessões
+- Mudar icone e nome
+- ajustar tela de perfil
+- tela de pacotes
+- arrumar tela de agendamento
+- Barra de carregamento ( perguntas )
+- Animações entre telas
+
+Tarfeas complexas:
+- tela de calendario
+- chat para tela de mensagens
+- trocar entre psicologos
+
+- fazer onboarding não aparecer mais ao criar a conta
+
+---------------
+
+Telas:
+* Tela de pacotes
+* Tela de termos
+* Tela de perfil
+* Tela de mensagem ( padrão )
+* Tela de mensagem ( ai )
+* Tela de chamada de vídeo
+* Tela de pesquisa de satisfação
+
+❌ ✅

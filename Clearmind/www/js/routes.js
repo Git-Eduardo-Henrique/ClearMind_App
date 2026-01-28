@@ -18,8 +18,8 @@ var app = new Framework7({
   // Add default routes
   routes: [
     {
-      path: '/inicio/',
-      url: 'inicio.html',
+      path: '/onboarding/',
+      url: 'onboarding.html',
       animate: false,
 	  on: {
 		pageBeforeIn: function (event, page) {
@@ -314,7 +314,7 @@ var app = new Framework7({
 
 //Para testes direto no navegador
 // nota edu: sempre descomentar essa parte para testes! comentar depois de testar
-var mainView = app.views.create('.view-main', { url: '/index/' });
+var mainView = app.views.create('.view-main', { url: '/inicio/' });
 
 //EVENTO PARA SABER O ITEM DO MENU ATUAL
 app.on('routeChange', function (route) {
@@ -332,12 +332,12 @@ app.on('routeChange', function (route) {
 
 function onDeviceReady() {
   //Quando estiver rodando no celular
-  var mainView = app.views.create('.view-main', { url: '/index/' });
+  var mainView = app.views.create('.view-main', { url: '/inicio/' });
 
   //COMANDO PARA "OUVIR" O BOTAO VOLTAR NATIVO DO ANDROID 	
   document.addEventListener("backbutton", function (e) {
 
-    if (mainView.router.currentRoute.path === '/index/') {
+    if (mainView.router.currentRoute.path === '/inicio/') {
       e.preventDefault();
       app.dialog.confirm('Deseja sair do aplicativo?', function () {
         navigator.app.exitApp();
